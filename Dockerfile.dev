@@ -1,0 +1,4 @@
+FROM openjdk:12-alpine
+WORKDIR /usr/app
+COPY /target/spring-scala*dependencies.jar /usr/app/app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
