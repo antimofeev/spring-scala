@@ -1,4 +1,4 @@
 FROM openjdk:12-alpine
 WORKDIR /usr/app
-COPY /main-module/target/main*.jar /usr/app/app.jar
+COPY /spring-module/target/spring*.jar /usr/app/app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
